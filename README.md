@@ -1,2 +1,2 @@
-# LoL-Cahmpion-Tracker
+# LoL-Champion-Tracker
 Work in Progress
