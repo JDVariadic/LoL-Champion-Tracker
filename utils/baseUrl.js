@@ -1,0 +1,1 @@
+export default 'http://ddragon.leagueoflegends.com/cdn/10.9.1/data/en_US/champion.json'
