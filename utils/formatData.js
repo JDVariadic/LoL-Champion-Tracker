@@ -4,5 +4,19 @@ export default async function formatData(data) {
   for (let key in rawData.data) {
     championArray.push([key, rawData.data[key]])
   }
-  return championArray
+  console.log(championArray)
+
+  let filteredChampionData = []
+  championArray.forEach(championObject => {
+    filteredChampionData = [...filteredChampionData, makeChampionObject(championObject[1])]
+  })
+
+  return filteredChampionData
+}
+
+export function makeChampionObject(championData){
+  return {
+    'name': championData.id,
+    'imagePath': championData.image.full,
+  }
 }
